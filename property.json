@@ -1,0 +1,39 @@
+{
+    "192.168.1.1": [
+        {
+            "system":"堡垒机",
+            "owner":"Fmelon",
+            "auth":[
+                {
+                "ports":[22,443,3389],
+                "openzone":["IT_Department"]
+                }
+            ]
+        }
+    ],
+    "192.168.0.2": [
+        {
+            "system":"认证网关服务器",
+            "owner":"Fmelon",
+            "auth":[
+                {
+                "ports":[22],
+                "openzone":["ManageZone"]
+                },{
+                "ports":[80,443],
+                "openzone":["office"]
+                }
+            ]
+        },{
+            "system":"运维管理服务器",
+            "owner":"Frank",
+            "auth":[
+                {
+                "ports":[8443],
+                "openzone":["ManageZone"]
+                }
+            ],
+            "_comment": "This schema is for the situation that a server deployed multi-application"
+        }
+    ]
+}
