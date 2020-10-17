@@ -153,7 +153,7 @@ class PropertyScanner:
                         sheet.write(linenumber, column+1, content)
                     linenumber += 1
         sheet.protect = True
-        sheet.password = "GPICnz2155"
+        # sheet.password = "abc"
         wbk.save(outfile)
 
 
